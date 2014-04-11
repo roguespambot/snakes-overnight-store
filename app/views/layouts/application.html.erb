@@ -8,10 +8,10 @@
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top">
-  <%= link_to "Home", root_url, class: "navbar-text pull-left" %>
+  <%= link_to "SnakesOvernight.com", root_url, class: "navbar-text pull-left" %>
   <% if current_user %>
   <%= link_to "Log Out", session_path("current"), method: "delete", class: "navbar-text pull-right" %>
-  <%= link_to "Manage Account", new_user_path, class: "navbar-text pull-right" %>
+  <%= link_to "Account", new_user_path, class: "navbar-text pull-right" %>
   <%= link_to "New Product", new_product_path, class: "navbar-text pull-right" %>
   <div class="navbar-text pull-right">
     Logged in as <%= current_user.name %>

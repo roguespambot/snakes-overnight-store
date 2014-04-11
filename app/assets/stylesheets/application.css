@@ -18,6 +18,10 @@
   margin-top: 37px;
 }
 
+.site_name {
+  float: center;
+}
+
 .form_wrapper {
   margin-top: 25px;
 }
@@ -34,6 +38,7 @@
 }
 
 .product_listing {
+  position: relative;
   float: left;
   padding: 8px;
   margin: 2px;
@@ -44,3 +49,4 @@
   border-style: solid;
   border-width: 1px;
 }
+
