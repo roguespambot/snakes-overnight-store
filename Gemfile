@@ -12,6 +12,8 @@ gem 'turbolinks'
 gem 'capybara'
 gem 'minitest'
 gem 'bcrypt'
+gem 'paperclip'
+gem 'money-rails'
 
 group :development do
   gem 'better_errors'

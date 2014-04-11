@@ -18,11 +18,14 @@
   </div>
   <div class="field form-group">
     <%= f.label :price %><br />
-    <%= f.number_field :price %>
+    <%= f.number_field :price, step: "any" %>
   </div>
   <div class="field form-group">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
+  </div>
+  <div class="field form-group">
+    <%= f.file_field :photo %>
   </div>
   <%= f.submit "Start Selling It!", class: "btn btn-success" %>
 <% end %>
