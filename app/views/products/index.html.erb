@@ -1,1 +1,8 @@
-<h1>Hello World!</h1>
+<h1>SnakesOvernight.com</h1>
+<p class="tagline">The hottest snakes, shipped to you overnight!</p>
+
+<h3>Our Products</h3>
+  <% @products.each do |product| %>
+  <%= link_to product.name, product_path(product) %>
+  <% end %>
+

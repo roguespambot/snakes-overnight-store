@@ -17,3 +17,18 @@
 .container {
   margin-top: 37px;
 }
+
+.form_wrapper {
+  margin-top: 25px;
+}
+
+.tagline {
+  margin-top: -10px;
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.navbar-text {
+  margin-left: 12px;
+  padding-right: 12px;
+}

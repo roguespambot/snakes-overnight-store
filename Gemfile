@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'capybara'
 gem 'minitest'
+gem 'bcrypt'
 
 group :development do
   gem 'better_errors'

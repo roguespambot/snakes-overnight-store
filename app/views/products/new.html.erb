@@ -1,0 +1,28 @@
+<div class="form_wrapper">
+  <h2>Add A Product!</h2>
+<%= form_for @product do |f| %>
+  <% if @product.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @product.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <%= f.submit "Start Selling It!", class: "btn btn-success" %>
+<% end %>
